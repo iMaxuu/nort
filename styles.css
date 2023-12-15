@@ -1,0 +1,57 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+img {
+    width: 15%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    margin: 3%;
+    font-size: 30px;
+    position: relative;
+    transition: color 0.5s; /* Añadida transición de color para suavizar el cambio de color */
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    animation: neon-glow 2s infinite; 
+}
+
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+hr {
+    margin: 2%;
+}
+
+p {
+    font-size: 19px;
+}
+
